@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Согласие на зачисление</title>
+  <link rel="stylesheet" href="css/sr.css" >
+</head>
+<body>
+<div>
+	<h1 align="right">Исполнительному Директору <br> Негосударственного образовательного частного<br>учреждения высшего образования<br>Московского финансово-промышленного университета «Синергия»<br>Лобову В.Г.<br>
+</h1>
+<h1 align="left">От <br> </h1>
+</div>
+
+<table width="100%" border="1px">
+  <tr>
+    <td width="50%" class="tabshap">
+      <p>Фамилия: <span class="podch"><?php echo $familiya; ?></span></p> 
+      <p>Имя: <span class="podch"><?php echo $imya ?></span></p>
+      <p>Отчество: <span class="podch"><?php echo $otchestvo; ?></span></p>
+      <p>Дата рождения: <span class="podch"><?php echo date("d.m.Y", strtotime($datarozhd));?> г.</span></p>
+      <p>Место рождения: <span class="podch"><?php echo $mestorozhd; ?></span></p>     
+    </td>
+    <td class="tabshap">
+      <p>Гражданство: <span class="podch"><?php echo $grazhd; ?></span></p>
+      <p>Документ, удостоверяющий личность,</p>
+      <p><span class="podch"><?php echo $docudl; ?></span></p>
+      <p><?php echo $seriyapasporta; ?> № <?php echo $nomerpasporta; ?></p>
+      <p>Когда и кем выдан: <span class="podch"><?php echo date("d.m.Y", strtotime($datavidachi));?> г. <?php echo $organvidachi; ?></span></p>
+    </td>
+  </tr>
+  </table>
+
+<h1 align="center">ЗАЯВЛЕНИЕ</h1>
+  <table width="100%">
+  <tr>
+    <td><p class="sogl">Я согласен на зачисление в Негосударственное образовательное частное учреждение высшего образования «Московский финансово-промышленный университет «Синергия» для обучения по образовательной программе высшего образования</p> </td>
+    </tr>
+<tr>
+    <td class="sogl2"><p><span><?php echo $napravlenie; ?></span></p> </td>
+    </tr>
+
+
+  
+
+  <tr>
+  	
+  	<td><p class="podp">(код, наименование направления подготовки (специальности))</p></td>
+
+  </tr>
+  <tr>
+  	
+  	<td><p class="sogl3">на места по договору об оказании платных образовательных услуг.</p></td>
+
+  </tr>
+  </table>
+
+  <br>
+  <br>
+  <br>
+  <table class="podpis" width="20%" border="1px">
+    <tr>
+      <td><p class="sogl2">&nbsp;</p> </td>
+    </tr>
+    <tr>
+      <td><p class="podp" align="center">(подпись)</p></td>
+    </tr>
+  </table>
+
+</div>
+<script type="text/javascript">window.onload = function () {
+window.print();
+}</script>
+
+
+</body>
+</html>

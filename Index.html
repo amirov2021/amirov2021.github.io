@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ввод данных</title>
+  
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  
+</head>
+<body>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+
+  <div class="container">
+    
+    <form action="./obr.php" method="post">
+     <div class="row">
+      <div class="form-group col-6">
+        <h1>Форма ввода данных</h1>
+      </div>
+       <div class="form-group col-3">
+        <label for="familiya">Номер личного дела</label>
+        <input type="number" class="form-control" name="nomerld">
+        </div>
+        <div class="form-group col-3"> 
+          <label for="imya">Дата заявления</label>
+         <input type="date" class="form-control" name="datazayav">
+        </div>
+      </div>
+      <hr>
+     <div class="row">
+       <div class="form-group col">
+        <label for="familiya">Фамилия</label>
+        <input type="text" class="form-control" placeholder="Фамилия" name="familiya">
+        </div>
+        <div class="form-group col"> 
+          <label for="imya">Имя</label>
+         <input type="text" class="form-control" placeholder="Имя" name="imya">
+        </div>
+        <div class="form-group col"> 
+         <label for="otchestvo">Отчество</label>
+         <input type="text" class="form-control" placeholder="Отчетство" name="otchestvo"><br>
+       </div>
+       <div class="form-group col">
+       <div><label for="pol">Пол <br></label> </div>
+                 <label class="radio-inline"><input type="radio" name="pol" checked value="Муж."> Муж.</label>
+        <label class="radio-inline"><input type="radio" name="pol" value="Жен."> Жен.</label>
+       </div>
+      </div>
+      <div class="row">
+       <div class="form-group col-4">
+         <label for="datarozhd">Дата рождения</label>
+         <input type="date" class="form-control" name="datarozhd" placeholder="Дата рождения">
+        </div>
+        <div class="form-group col"> 
+         <label for="mestorozhd">Место рождения</label>
+         <input type="text" class="form-control" placeholder="Место рождания" name="mestorozhd"><br>
+        </div>
+      </div>
+      <div class="row">
+       <div class="form-group col-4">
+        <label for="grazhd">Гражданство</label>
+        <select name="grazhd" class="form-control">
+          <option selected>Выбрать...</option>
+          <option>РФ</option>
+          <option>Азербайджан</option>
+          <option>Украина</option>
+          <option>Казахстан</option>
+        </select>
+      </div>
+        <div class="form-group col-4"> 
+          <label for="docudl">Документ, удостоверяющий личность</label>
+          <select name="docudl" class="form-control">
+            <option selected>Выбрать...</option>
+            <option>Паспорт гражданина РФ</option>
+            <option>Паспорт иностранного гражданина</option>
+          </select>
+        </div>
+        <div class="form-group col-2"> 
+         <label for="seriyapasporta">Серия паспорта</label>
+         <input type="text" class="form-control" placeholder="1234" name="seriyapasporta">
+       </div>
+       <div class="form-group col-2"> 
+         <label for="nomerpasporta">Номер паспорта</label>
+         <input type="text" class="form-control" placeholder="123456" name="nomerpasporta"><br>
+       </div>
+      </div>
+      <div class="row">
+       <div class="form-group col-4">
+         <label for="datavidachi">Дата выдачи</label>
+         <input type="date" class="form-control" name="datavidachi" placeholder="Дата выдачи">
+        </div>
+        <div class="form-group col-8"> 
+         <label for="organvidachi">Кем выдан</label>
+         <input type="text" class="form-control" placeholder="ОУФМС" name="organvidachi"><br>
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group col-12"> 
+         <label for="adresprozhivaniya">Адрес проживания</label>
+         <input type="text" class="form-control" placeholder="РФ, Республика Дагестан, г. Дербент ул. Строительная д. 14" name="adresprozhivaniya"><br>
+        </div>
+      </div>
+      <div class="row">
+         <div class="form-group col"> 
+          <label for="nomer-stud">Телефон студента</label>
+         <input type="text" class="form-control" placeholder="+79281234566" name="nomer-stud">
+        </div>
+        <div class="form-group col"> 
+         <label for="nomer-pred">Телефон представителя</label>
+         <input type="text" class="form-control" placeholder="+79281234566" name="nomer-pred">
+       </div>
+       <div class="form-group col"> 
+         <label for="email-stud">Эл. почта</label>
+         <input type="email" class="form-control" placeholder="ivan@mail.ru" name="email-stud"><br>
+       </div>
+      </div>
+      <div class="row">
+        <div class="form-group col"> 
+          <label for="urobraz">Уровень образования</label>
+          <select name="urobraz" class="form-control" id="urobraz">
+            <option selected>Выбрать...</option>
+            <option value="vpo">Высшее образование</option>
+            <option value="spo">Среднее профессиональное образование</option>
+          </select>
+        </div>
+        <div class="form-group col"> 
+          <label for="srok-os-op">Cрок освоения образовательной программы </label>
+          <select name="srok-os-op" class="form-control">
+            <option selected>Выбрать...</option>
+            <option>Ускоренный</option>
+            <option>Полный</option>
+          </select>
+        </div>
+        <div class="form-group col"> 
+          <label for="napravlenie">Направление <a data-toggle="modal" data-target="#exampleModal">(Добавить)</a></label>
+          <select name="napravlenie" class="form-control">
+            <option selected>Выбрать...</option>
+            <option>Юриспруденция</option>
+            <option>Экономика</option>
+            <option>Менеджмент</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+        <button type="submit" class="btn btn-primary" name="zayavlenie">Заявление</button>
+        <button type="submit" class="btn btn-primary" name="dogovor">Договор</button>
+        <button type="submit" class="btn btn-primary" name="sogl-na-zachisl">Согласие на зачисление</button>
+        <button type="submit" class="btn btn-primary" name="sogl-na-pd">Согласие на обработку ПД</button>
+        <button type="submit" class="btn btn-primary" name="raspiska">Расписка</button>
+        </div>
+      </div>
+      
+    </form>
+    
+  </div>  
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Добавление нового направления</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form method="POST" action="">
+          <label for="napravlenie">Наименование направления</label>
+  <input name="name" type="text" class="form-control" />
+   
+<div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Выйти</button>
+        <button type="submit" class="btn btn-primary" name="dobnaprav">Сохранить в БД</button>
+      </div>
+ </form> 
+ <?php 
+if (isset($_POST['name'])){ 
+ // Переменные с формы
+$name = $_POST['name'];
+
+
+// Подключение к базе данных
+include ('db.php'); 
+
+
+$result = $mysqli->query("INSERT INTO napravleniya (name) VALUES ('$name')");
+
+if ($result == true){
+  echo "Запись добавлена";
+}else{
+  echo "Ошибка при добавлении записи в БД ";
+}
+}
+
+
+?>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+if (document.getElementById("urobraz").options.selectedIndex == "vpo") {
+   alert("Выбран Пункт впо");
+}
+
+</script>
+</body>
+</html>

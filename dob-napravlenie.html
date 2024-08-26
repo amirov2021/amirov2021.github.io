@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Добавление направления</title>
+</head>
+<body>
+<?php 
+if (isset($_POST['name'])){ 
+ // Переменные с формы
+$name = $_POST['name'];
+
+
+// Подключение к базе данных
+include ('db.php'); 
+
+
+$result = $mysqli->query("INSERT INTO napravleniya (name) VALUES ('$name')");
+
+if ($result == true){
+	echo "Запись добавлена";
+}else{
+	echo "Ошибка при добавлении записи в БД ";
+}
+}
+
+
+?>
+</body>
+</html>
+
+
+

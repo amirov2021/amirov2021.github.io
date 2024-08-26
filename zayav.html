@@ -1,0 +1,680 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Заявление</title>
+  <link rel="stylesheet" href="css/sr.css" >
+</head>
+<body class="zayav">
+<TABLE>
+  <tr>
+    <td width="35%">
+      <br><br><br>
+      <p class="arial10">От</p>
+    </td>
+    <td width="65%">
+      <p class="ispd">Генеральному директору<br> 
+ ООО "Центр информационных технологий <br>
+ и развивающего обучения "Интеллект"<br>
+Я.Н.Османову</p>
+    </td>
+  </tr>
+</TABLE>
+
+
+
+<TABLE>
+  <tr>
+    <td width="5%">
+      <p class="arial10">ФИО:</p>
+    </td>
+    <td width="95%">
+      <p class="arial10 npod"><?php echo $familiya; ?> <?php echo $imya; ?> <?php echo $otchestvo; ?></p>
+    </td>
+  </tr>
+</TABLE>
+
+
+<TABLE>
+  <tr>
+    <td width="17%">
+      <p class="arial10">Дата рождения:</p>
+    </td>
+    <td width="20%">
+      <p class="arial10 npod"><span><?php echo date("d.m.Y", strtotime($datarozhd));?> г.</span></p>
+    </td>
+    <td width="10%">
+      <p class="arial10" style="text-align: center;">Пол</p>
+    </td>
+    <td width="17%">
+      <p class="arial10 npod"><span><?php echo $pol; ?></span></p>
+    </td>
+    <td width="15%">
+      <p class="arial10" style="text-align: center;">Гражданство</p>
+    </td>
+    <td width="20%">
+      <p class="arial10 npod"><span><?php echo $grazhd; ?></p>
+    </td>
+  </tr>
+</TABLE>
+
+
+<TABLE>
+  <tr>
+    <td width="15%">
+      <p class="arial10">Место рождения:</p>
+    </td>
+    <td width="85%">
+      <p class="arial10 npod"><span><?php echo $mestorozhd; ?></span></p></p>
+    </td>
+  </tr>
+</TABLE>
+
+
+<TABLE>
+  <tr>
+    <td width="100%">
+      <p class="arial10 npod">&nbsp;</p>
+    </td>
+  </tr>
+</TABLE>
+
+
+<TABLE>
+  <tr>
+    <td width="33%">
+      <p class="arial10">Документ, удостоверяющий личность:</p>
+    </td>
+    <td width="67%">
+      <p class="arial10 npod"><span><?php echo $docudl; ?></span></p>
+    </td>
+  </tr>
+</TABLE>
+
+
+
+<TABLE>
+  <tr>
+    <td width="5%">
+      <p class="arial10">Серия</p>
+    </td>
+    <td width="10%">
+      <p class="arial10 npod"><?php echo $seriyapasporta; ?></p>
+    </td>
+    <td width="5%">
+      <p class="arial10" style="text-align: center;">№</p>
+    </td>
+    <td width="10%">
+      <p class="arial10 npod"><?php echo $nomerpasporta; ?></p>
+    </td>
+    <td width="20%">
+      <p class="arial10" style="text-align: center;">Когда и кем выдан:</p>
+    </td>
+    <td width="50%">
+      <p class="arial10 npod"><span><?php echo date("d.m.Y", strtotime($datavidachi));?> г.</span></p>
+    </td>
+  </tr>
+</TABLE>
+
+<TABLE>
+  <tr>
+    <td width="100%">
+      <p class="arial10 npod"><span><?php echo $organvidachi; ?></span></p>
+    </td>
+  </tr>
+</TABLE>
+
+
+
+
+<TABLE>
+  <tr>
+    <td width="17%">
+      <p class="arial10">Проживающего (ей):</p>
+    </td>
+    <td width="83%">
+      <p class="arial10 npod"><span><?php echo $adresprozhivaniya; ?></span></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="17%"></td>
+    <td width="83%"><p class="arial7" style="text-align: center;">(указать почтовый индекс, адрес по месту жительства)</p></td>
+  </tr>
+</TABLE>
+
+
+
+<TABLE>
+  <tr>
+    <td width="20%">
+      <p class="arial10">Мобильный телефон:</p>
+    </td>
+    <td width="30%">
+      <p class="arial10 npod"><span><?php echo $nomerstud; ?></span></p>
+    </td>
+    <td width="20%">
+      <p class="arial10" style="text-align: center;">Второй телефон</p>
+    </td>
+    <td width="30%">
+      <p class="arial10 npod"><span><?php echo $nomerpred; ?></span></p>
+    </td>
+  </tr>
+</TABLE>
+
+
+
+<TABLE>
+  <tr>
+    <td width="10%">
+      <p class="arial10">E-mail:</p>
+    </td>
+    <td width="90%">
+      <p class="arial10 npod"><span><?php echo $emailstud; ?></span></p>
+    </td>
+  </tr>
+</TABLE>
+
+
+<p style="font-family: Arial,sans-serif; font-size: 14pt; font-weight: bold; text-align: center;">Заявление на обучение</p>
+
+
+<p class="arial10">Прошу зачислить меня на курс:</p>
+
+
+<TABLE>
+  <tr>
+    <td width="2%" style="border: 2px solid black;">
+      <p class="arial10" style="text-align: center;"><span><?php echo $vpo; ?></span></p>
+    </td>
+    <td width="2%"></td>
+    <td width="46%">
+      <p class="arial10">высшего образования</p>
+    </td>
+    <td width="2%" style="border: 2px solid black;">
+      <p class="arial10" style="text-align: center;"><span><?php echo $spo; ?></span></p>
+    </td>
+    <td width="2%"></td>
+    <td width="46%">
+      <p class="arial10">среднего профессионального образования</p>
+    </td>
+  </tr>
+</TABLE>
+
+
+
+<TABLE>
+  <tr>
+    <td width="2%">
+      <p class="arial10">c</p>
+    </td>
+    <td width="18%">
+      <p class="arial10 npod"><span><?php echo $srokosop; ?></span></p>
+    </td>
+    <td width="80%">
+      <p class="arial10">сроком освоения образовательной программы</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="2%">
+      <p class="arial10"></p>
+    </td>
+    <td width="18%">
+      <p class="arial7" style="text-align: center;">полным/ускоренным</p>
+    </td>
+    <td width="80%">
+      <p class="arial10"></p>
+    </td>
+  </tr>
+</TABLE>
+
+
+
+<table class="tabnaprav" border="1px solid">
+  <tr>
+    <td width="50%" rowspan="2">
+      <p class="arial10">Направление/специальность</p>
+    </td>
+    <td width="50%" colspan="9">
+      <p class="arial10">Форма обучения</p>
+    </td>
+  </tr>
+  <tr>
+     <td width="16%">
+      <p class="arial10">очная</p>
+    </td>
+    <td width="16%">
+      <p class="arial10">очно-заочная</p>
+    </td>
+    <td width="16%">
+      <p class="arial10">заочная</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <br>
+      <p class="arial10"><span><?php echo $napravlenie; ?></span></p>
+    </td>
+    <td width="16%">
+      <br>
+      <div class="vibor"><p class="arial10"><span><?php echo $formaoboch; ?></p></div>
+      
+    </td>
+    <td width="16%">
+      <br>
+      <div class="vibor"><p class="arial10"><span><?php echo $formaobochzaoch; ?></p></div>
+      
+    </td>
+    <td width="16%">
+      <br>
+      <div class="vibor"><p class="arial10"><span><?php echo $formaobzaoch; ?></p></div>
+      
+    </td>
+  </tr>
+ <tr>
+    <td width="50%">
+    </td>
+    <td width="16%">
+      <br>
+      <div class="vibor"><p class="arial10"></p></div>
+      
+    </td>
+    <td width="16%">
+      <br>
+      <div class="vibor"><p class="arial10"></p></div>
+      
+    </td>
+    <td width="16%">
+      <br>
+      <div class="vibor"><p class="arial10"></p></div>
+    </td>
+  </tr>
+</table>
+<br>
+
+<table class="tabnaprav" border="1px solid">
+  <tr>
+    <td width="40%"><p class="arial10">Наименование дисциплины</p></td>
+    <td width="20%"><p class="arial10">Участвую в конкурсе с результатами ЕГЭ Результат (балл)</p></td>
+    <td width="20%"><p class="arial10">Сдаю вступительные испытания в Университет "Синергия"</p></td>
+    <td width="20%"><p class="arial10">Намерен сдавать вступительные испытания на языке</p></td>
+  </tr>
+  <tr>
+    <td><br><p class="arial10"><span><?php echo $predmet1; ?></span></p></td>
+    <td></td>
+    <td><div class="vibor"><p class="arial10"><span><?php echo $noege; ?></span></p></div></td>
+    <td><p class="arial10">Русском</p></td>
+  </tr>
+  <tr>
+    <td><br><p class="arial10"><span><?php echo $predmet2; ?></span></p></td>
+    <td></td>
+    <td><div class="vibor"><p class="arial10"><span><?php echo $noege; ?></span></p></div></td>
+    <td><p class="arial10">Русском</p></td>
+  </tr>
+  <tr>
+    <td><br><p class="arial10"><span><?php echo $predmet3; ?></span></p></td>
+    <td></td>
+    <td><div class="vibor"><p class="arial10"><span><?php echo $noege; ?></span></p></div></td>
+    <td><p class="arial10">Русском</p></td>
+  </tr>
+</table>
+
+
+<p class="arial8">Основания для участия в конкурсе по результатам вступительных испытаний, проводимых Университетом:</p>
+<?php
+$osnuchvkon1 = "&nbsp;";
+$osnuchvkon2 = "&nbsp;";
+$osnuchvkon3 = "&nbsp;";
+$osnuchvkon4 = "&nbsp;";
+$osnuchvkon5 = "&nbsp;";
+$osnuchvkon6 = "&nbsp;"; 
+/* Условие для участия в конкурсе*/
+if ($osnuchvkon == '1') {
+  $osnuchvkon1 = 'V';
+} elseif ($osnuchvkon == '2') {
+    $osnuchvkon2 = 'V';
+} elseif ($osnuchvkon == '3') {
+    $osnuchvkon3 = 'V';
+}elseif ($osnuchvkon == '4') {
+    $osnuchvkon4 = 'V';
+}elseif ($osnuchvkon == '5') {
+    $osnuchvkon5 = 'V';
+}else {
+    $osnuchvkon6 = 'V';
+}
+?>
+
+
+
+<table border="0">
+  <tr>
+    <td width="3%" valign="top"><div class="vibor"><p class="arial10"><span><?php echo $osnuchvkon1; ?></span></p></div></td>
+    <td width="27%" valign="top"><p class="arial8">ребенок-инвалид, инвалид</p></td>
+    <td width="3%" valign="top"><div class="vibor"><p class="arial10"><span><?php echo $osnuchvkon2; ?></span></p></div></td>
+    <td width="27%" valign="top"><p class="arial8">иностранный гражданин</p></td>
+    <td width="3%" valign="top"><div class="vibor"><p class="arial10"><span><?php echo $osnuchvkon3; ?></span></p></div></td>
+    <td width="27%" valign="top"><p class="arial8">лицо, поступающее  на обучение на базе профессионального образования</p></td>
+  </tr>
+  <tr>
+    <td valign="top"><div class="vibor"><p class="arial10"><span><?php echo $osnuchvkon4; ?></span></p></div></td>
+    <td valign="top"><p class="arial8">лицо, которое получило документ о среднем 
+общем образовании в течение одного года до дня завершения приема документов и вступительных испытаний включительно, и все пройденные мною в указанный период аттестационные испытания государственной итоговой аттестации по образовательным программам среднего общего образования сданы не в форме ЕГЭ (либо прошло итоговые аттестационные процедуры в иностранных образовательных организациях и не сдавало ЕГЭ в указанный период).
+</p></td>
+    <td valign="top"><div class="vibor"><p class="arial10"><span><?php echo $osnuchvkon5; ?></span></p></div></td>
+    <td valign="top"><p class="arial8">лицо, которое прошло государственную 
+итоговую аттестацию по общеобразовательным предметам в форме государственного выпускного экзамена, и получило документ о среднем общем образовании в течение одного года до дня завершения приема документов и вступительных испытаний включительно и в этот период не сдавали ЕГЭ по соответствующим общеобразовательным предметам
+</p></td>
+    <td valign="top"><div class="vibor"><p class="arial10"><span><?php echo $osnuchvkon6; ?></span></div></td>
+    <td valign="top"><p class="arial8">лицо,  признанное гражданином РФ,  
+или лицо, постоянно проживавшим на территории Крыма
+</p></td>
+  </tr>
+</table>
+
+
+<!-- Вторая страница-->
+
+
+
+<p class="ispd">О себе сообщаю следующее:</p>
+
+
+<TABLE>
+  <tr>
+    <td width="10%">
+      <p class="arial8">Окончил(а) в</p>
+    </td>
+    <td width="10%">
+      <p class="arial8 npod"><span><?php echo $godokan; ?></span></p>
+    </td>
+    <td width="80%">
+      <p class="arial8">году</p>
+    </td>
+  </tr>
+</TABLE>
+
+
+
+<TABLE>
+  <tr>
+    <td width="15%">
+      <p class="arial8">Учебное заведение:</p>
+    </td>
+    <td width="85%">
+      <p class="arial8 npod"><span><?php echo $uchzaved; ?></span></p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p class="arial8 npod">&nbsp;</p></td>
+  </tr>
+</TABLE>
+
+
+<TABLE>
+  <tr>
+    <td width="17%">
+      <p class="arial8">что подтверждает</p>
+    </td>
+    <td width="30%">
+      <p class="arial8 npod">Диплом</p>
+    </td>
+    <td width="10%">
+      <p class="arial8" style="text-align: center;">Серия</p>
+    </td>
+    <td width="17%">
+      <p class="arial8 npod"><span><?php echo $serdok; ?></span></p>
+    </td>
+    <td width="5%">
+      <p class="arial8" style="text-align: center;">№</p>
+    </td>
+    <td width="20%">
+      <p class="arial8 npod"><span><?php echo $nomerdok; ?></span></p>
+    </td>
+  </tr>
+</TABLE>
+
+
+
+<TABLE>
+  <tr>
+    <td width="25%">
+      <p class="arial8">Изучал(а) иностранный язык:</p>
+    </td>
+    <td width="75%">
+      <p class="arial8 npod">Английский</p>
+    </td>
+  </tr>
+</TABLE>
+
+
+<TABLE>
+  <tr>
+    <td width="25%">
+      <p class="arial8">Льготы при поступлении:</p>
+    </td>
+    <td width="5%" valign="top"><div class="vibor"><p class="arial8">V</p></div></td>
+    <td width="20%">
+      <p class="arial8">не имею</p>
+    </td>
+    <td width="5%" valign="top"><div class="vibor"><p class="arial8"></p></div></td>
+    <td width="45%">
+      <p class="arial8">имею: без вступительных испытаний, вне конкурса</p>
+    </td>
+    
+  </tr>
+</TABLE>
+
+
+
+<TABLE>
+  <tr>
+    <td width="30%">
+      <p class="arial8">Документ, предоставляющий право на льготы</p>
+    </td>
+    <td width="70%">
+      <p class="arial8 npod">&nbsp;</p>
+    </td>
+  </tr>
+</TABLE>
+
+
+<TABLE>
+  <tr>
+    <td colspan="2">
+      <p class="arial8">Являюсь победителем и призером заключительного этапа Всероссийской олимпиады школьников и членом</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="45%">
+      <p class="arial8">сборных команд РФ международных олимпиад по</p>
+    </td>
+    <td width="65%">
+      <p class="arial8 npod">&nbsp;</p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <p class="arial8 npod">&nbsp;</p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <p class="arial7" style="text-align: center;">реквизиты документа</p>
+    </td>
+  </tr>
+</TABLE>
+
+
+
+<TABLE>
+  <tr>
+    <td width="15%">
+      <p class="arial8">Общежитие:</p>
+    </td>
+    <td width="5%" valign="top"><div class="vibor"><p class="arial8"></p></div></td>
+    <td width="20%">
+      <p class="arial8">нуждаюсь</p>
+    </td>
+    <td width="5%" valign="top"><div class="vibor"><p class="arial8">V</p></div></td>
+    <td width="50%">
+      <p class="arial8">не нуждаюсь</p>
+    </td>
+    
+  </tr>
+</TABLE>
+
+
+<TABLE>
+  <tr>
+    <td colspan="2">
+      <p class="arial8">Перечень необходимых специальных условий при проведении вступительных испытаний в  связи с ограниченными возможностями</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="60%">
+      <p class="arial8">здоровья или инвалидностью (с указанием наименования  вступительных испытаний):</p>
+    </td>
+    <td width="40%">
+      <p class="arial8 npod">&nbsp;</p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <p class="arial8 npod">&nbsp;</p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <p class="arial8 npod">&nbsp;</p>
+    </td>
+  </tr>
+</TABLE>
+
+
+
+<TABLE>
+  <tr>
+    <td width="30%">
+      <p class="arial8">Сведения об индивидуальных достижений: </p>
+    </td>
+    <td width="70%">
+      <p class="arial8 npod">&nbsp;</p>
+    </td>
+  </tr>
+</TABLE>
+
+
+
+<TABLE>
+  <tr>
+    <td width="70%">
+      <p class="arial8">Являюсь лицом, признанным гражданином, или лицом, постоянно проживавшим на территории Крыма </p>
+    </td>
+    <td width="30%" valign="top"><div class="vibor"><p class="arial8"></p></div></td>
+  </tr>
+</TABLE>
+
+
+<TABLE>
+  <tr>
+    <td colspan="2">
+      <p class="arial8">Способ возврата оригиналов документов в случае не поступления на обучение:</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="5%" valign="top"><div class="vibor"><p class="arial8">V</p></div></td>
+    <td width="85%">
+      <p class="arial8">передача лицу, отозвавшему поданные документы или доверенному лицу.</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="5%" valign="top"><div class="vibor"><p class="arial8"></p></div></td>
+    <td width="85%">
+      <p class="arial8">направление через операторов почтовой связи общего пользования.</p>
+    </td>
+  </tr>
+</TABLE>
+
+
+<table>
+  <tr>
+    <td colspan="2"><p class="arial8">Подтверждаю, что мною поданы заявления о приеме не более чем в 5 организаций высшего образования, включая Университет, и при
+подаче нескольких заявлений о приеме на обучение в Университет по результатам конкурса не более чем</p></td>
+  </tr>
+
+  <tr>
+    <td width="80%"><p class="arial8">по 3 специальностям и (или) направлениям подготовки</p></td>
+    <td width="20%"><p class="arial8 npod">&nbsp;</p></td>
+  </tr>
+  <tr>
+    <td width="80%"></td>
+    <td width="20%"><p class="arial7" style="text-align: center;">(подпись поступающего)</p></td>
+  </tr>
+  <tr>
+    <td width="80%"><p class="arial8">Ознакомлен(а) со следующими документами:<br>
+- Уставом Университет "Синергия"<br>
+- лицензией на право осуществления образовательной деятельности
+- свидетельством о государственной аккредитации (с наличием/отсутствием приложений
+по выбранному направлению)<br>
+- с информацией о предоставляемых поступающим особых правах и преимуществах при 
+приеме на обучение по программам бакалавриата и программам специалитета<br>
+- с датами завершения представления поступающими сведений о согласии на зачисление 
+на места по договорам об оказании платных образовательных услуг
+- Правилами приема в Университет «Синергия»<br>   
+- правилами подачи апелляций<br>
+- условиями предоставления мест в общежитии<br> 
+</p></td>
+    <td width="20%" valign="bottom"><p class="arial8 npod">&nbsp;</p></td>
+  </tr>
+  <tr>
+    <td width="80%"></td>
+    <td width="20%"><p class="arial7" style="text-align: center;">(подпись поступающего)</p></td>
+  </tr>
+  <tr>
+    <td width="80%"><br><p class="arial8">Подтверждаю получение мною образования данного уровня впервые</p></td>
+    <td width="20%" valign="bottom"><p class="arial8 npod">&nbsp;</p></td>
+  </tr>
+  <tr>
+    <td width="80%"></td>
+    <td width="20%"><p class="arial7" style="text-align: center;">(подпись поступающего)</p></td>
+  </tr>
+  <tr>
+    <td width="80%"><br><p class="arial8">Даю согласие на обработку моих персональных данных</p></td>
+    <td width="20%" valign="bottom"><p class="arial8 npod">&nbsp;</p></td>
+  </tr>
+  <tr>
+    <td width="80%"></td>
+    <td width="20%"><p class="arial7" style="text-align: center;">(подпись поступающего)</p></td>
+  </tr>
+  <tr>
+    <td width="80%"><br><p class="arial8">Ознакомлен с информацией об ответственности за достоверность сведений. <br>Указываемых в заявлении о приеме и подлинность документов, подаваемых для поступления  </p></td>
+    <td width="20%" valign="bottom"><p class="arial8 npod">&nbsp;</p></td>
+  </tr>
+  <tr>
+    <td width="80%"></td>
+    <td width="20%"><p class="arial7" style="text-align: center;">(подпись поступающего)</p></td>
+  </tr>
+</table>
+
+
+<table>
+  <tr>
+    <td width="45%" valign="bottom">
+            <p class="arial8">Заявление принял: сотрудник приемной комиссии</p>
+    </td>
+    <td width="30%">
+      <br>
+      <p class="arial8 npod">Гасанов Р. Б.</p>
+    </td>
+    <td width="5%"></td>
+    <td width="20%" valign="bottom"><p class="arial8 npod">&nbsp;</p></td>
+  </tr>
+  
+</table>
+
+<br>
+<br>
+<p class="arial8" style="text-align: right; padding-right: 5%;"><span><?php echo $datazayav; ?></span> г.</p>
+
+
+</body>
+</html>

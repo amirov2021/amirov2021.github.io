@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Экзаменационный лист</title>
+  <link rel="stylesheet" href="css/sr.css" >
+</head>
+<body class="exlist">
+
+<table>
+  <tr>
+    <td width="50%" rowspan="3"></td>
+    <td width="50%">
+      <p style="text-align: center; font-size: 14pt;">Московский финансово-промышленный университет "Синергия"</p>
+      <table>
+        <tr>
+          <td width="70%"><p style="text-align: right; font-weight: bold;" >Форма обучения:</p></td>
+          <td width="30%"><p class="npod"><?php echo $fo; ?></p></td>
+        </tr>
+        <tr>
+          <td width="70%"><p style="text-align: right; font-weight: bold;" >Экзаменационный лист №</p></td>
+          <td width="30%"><p class="npod"><?php echo $nomerld; ?> &nbsp;</p></td>
+        </tr>
+      </table>
+      <table>
+        <tr>
+          <td width="30%"><p style="font-weight: bold;" >Факультет:</p></td>
+          <td width="70%"><p class="npod ">Электронного обучения</p></td>
+        </tr>
+        <tr>
+          <td colspan="2"><p class="npod">&nbsp;</p></td>
+        </tr>
+        <tr>
+          <td width="30%"><p style="font-weight: bold;" >Специальность:</p></td>
+          <td width="70%"><p class="npod "><span><?php echo $napravlenie; ?></span></p></td>
+        </tr>
+        <tr>
+          <td colspan="2"><p class="npod">&nbsp;</p></td>
+        </tr>
+        <tr>
+          <td width="30%"><p style="font-weight: bold;" >Фамилия:</p></td>
+          <td width="70%"><p class="npod "><?php echo $familiya; ?></p></td>
+        </tr>
+        <tr>
+          <td width="30%"><p style="font-weight: bold;" >Имя:</p></td>
+          <td width="70%"><p class="npod "><?php echo $imya; ?></p></td>
+        </tr>
+        <tr>
+          <td width="30%"><p style="font-weight: bold;" >Отчество</p></td>
+          <td width="70%"><p class="npod "><?php echo $otchestvo; ?></p></td>
+        </tr>
+      </table>
+      <table>
+        <tr>
+          <td rowspan="5" width="30%"><img src="<?php echo $foto; ?>" width="113px" height="150px"></td>
+          <td width="20%"><p>&nbsp;</p></td>
+          <td width="30%"><p class="npod">&nbsp;</p></td>
+          <td width="20%"><p>&nbsp;</p></td>
+        </tr>
+        <tr style="padding: 0px">
+          <td width="20%" valign="top"><p>&nbsp;</p></td>
+          <td width="30%" valign="top"><sup><p class="arial7" style="text-align: center; ">(личная подпись абитуриента)</p></sup></td>
+          <td width="20%" valign="top"><p>&nbsp;</p></td>
+        </tr>
+        <tr>
+          <td colspan="3"><p >М.П. Дата выдачи: <span><?php echo $datazayav; ?></span> г.</p></td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <p class="npod">&nbsp;</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <p style="text-align: center;" >Подпись ответственного секретаря<br>приемной комиссии</p>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<!-- Вторая страница-->
+
+<table border="1" style="text-align: center;">
+  <tr>
+    <td rowspan="2"><p class="arial10">№</p></td>
+    <td rowspan="2"><p class="arial10">Наименование предмета</p></td>
+    <td rowspan="2"><p class="arial10">Характер вступительного испытания</p></td>
+    <td rowspan="2"><p class="arial10">Дата вступительного испытания <br> (число и месяц)</p></td>
+    <td colspan="2"><p class="arial10">Результат</p></td>
+    <td rowspan="2"><p class="arial10">Фамилия и инициалы экзаменаторов <br> (разборчиво)</p></td>
+    <td rowspan="2"><p class="arial10">Подписи экзаменаторов</p></td>
+  </tr>
+  <tr>
+    <td>
+      <p class="arial10">цифрой</p>
+    </td>
+    <td>
+      <p class="arial10">прописью</p>
+    </td>
+  </tr>
+  <tr>
+    <td><p class="arial10">1</p></td>
+    <td><p class="arial10"><span><?php echo $predmet1; ?></span></p></td>
+    <td><p class="arial10">тестирование</p></td>
+    <td><p class="arial10"><span><?php echo date("d.m.Y", strtotime($dataex1));?> г.</span></p></td>
+    <td width="120px"><p>&nbsp;</p></td>
+    <td width="120px"><p>&nbsp;</p></td>
+    <td ><p class="arial10">Тихонова И.А.</p></td>
+    <td width="120px"><p>&nbsp;</p></td>
+  </tr>
+  <tr>
+    <td><p class="arial10">2</p></td>
+    <td><p class="arial10"><span><?php echo $predmet2; ?></span></p></td>
+    <td><p class="arial10">тестирование</p></td>
+    <td><p class="arial10"><span><?php echo date("d.m.Y", strtotime($dataex2));?> г.</span></p></td>
+    <td width="120px"><p>&nbsp;</p></td>
+    <td width="120px"><p>&nbsp;</p></td>
+    <td ><p class="arial10">Тихонова И.А.</p></td>
+    <td width="120px"><p>&nbsp;</p></td>
+  </tr>
+  <tr>
+    <td><p class="arial10">3</p></td>
+    <td><p class="arial10"><span><?php echo $predmet3; ?></span></p></td>
+    <td><p class="arial10">тестирование</p></td>
+    <td><p class="arial10"><span><?php echo date("d.m.Y", strtotime($dataex3));?> г.</span></p></td>
+    <td width="120px"><p>&nbsp;</p></td>
+    <td width="120px"><p>&nbsp;</p></td>
+    <td ><p class="arial10">Тихонова И.А.</p></td>
+    <td width="120px"><p>&nbsp;</p></td>
+  </tr>
+</table>
+
+<table>
+  <tr> <td height="300px"></td></tr>
+  <tr>
+    <td width="20%" ><p class="arial10" style="text-align: left;" ><br><br>Сумма баллов, полученных <br> на вступительных испытаниях</p></td>
+    <td width="80%" colspan="2"><p class="npod"> <br><br> &nbsp;</p></td>
+  </tr>
+  <tr>
+    <td height="40px" colspan="3"><p> &nbsp;</p></td>
+  </tr>
+  <tr>
+    <td width="20%"><p>&nbsp;</p></td>
+    <td width="20%"><p class="arial10" style="text-align: left;" >Ответственный секретарь <br> приемной комиссии </p></td>
+    <td width="60%"><p class="npod">&nbsp;</p></td>
+  </tr>
+</table>
+
+
+
+</body>
+</html>
